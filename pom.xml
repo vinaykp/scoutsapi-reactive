@@ -63,7 +63,7 @@
                         </goals>
                         <configuration>
                             <excludes>
-                                <exclude>**/model/*</exclude>
+                                <exclude>**/model/*.class</exclude>
                             </excludes>
                         </configuration>
                     </execution>
