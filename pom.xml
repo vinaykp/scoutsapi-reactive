@@ -55,17 +55,17 @@
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.2</version>
-                <configuration>
-                    <excludes>
-                        <exclude>**/model/*</exclude>
-                    </excludes>
-                </configuration>
                 <executions>
                     <execution>
                         <id>default-prepare-agent</id>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
+                        <configuration>
+                            <excludes>
+                                <exclude>**/model/*</exclude>
+                            </excludes>
+                        </configuration>
                     </execution>
                     <execution>
                         <id>default-report</id>
